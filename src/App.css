@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo img{
+  height: 200px;
+  width: 400px;
+  border-radius: 15px;
+  
+}
+.App-logo{
+  height: 200px;
+  border-radius: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+form{
+  display: flex;
+  justify-content: center;
+}
+
+.App-title {
+  color: white;
+  margin-top: 0.6rem;
+}
+
+.App-content {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  padding: 16px;
+  text-align: left;
+}
+.searchButton{
+  font-size: 30px;
+  border-radius: 15px;
+  background-color:#0087FF;
+  border:none;
+}
+input{
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.App-results {
+  flex-shrink: 2;
+  width: 100%;
+}
+
+.App-category {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 55rem){
+  .App-main{
+    flex-direction: initial;
+  }
+
+  .App-category{
+    position: sticky;
+    top: var(--search-size-mx-h);
+    width: 40%;
+    max-width: 300px;
+  }
+}
